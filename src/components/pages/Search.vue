@@ -95,7 +95,7 @@ export default {
           url += "/" + this.$route.params.site;
         }
         if (this.$route.params.author_id !== undefined) {
-          params["author_id"] = this.$route.params.author_id;
+          url += "/" + this.$route.params.author_id;
         }
         if (this.$route.query.tag !== undefined) {
           params["tag"] = this.$route.query.tag;
